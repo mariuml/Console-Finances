@@ -88,20 +88,43 @@ var finances = [
 ];
 
 
-// Calculate the total number of months included in the dataset.
+// FINAL VARIABLE: Calculate the total number of months included in the dataset.
 
 var TotalMonths = finances.length; 
-console.log(TotalMonths);
 
-// Calculate the net total amount of Profit/Losses over the entire period.
+// FINAL VARIABLE: Calculate the net total amount of Profit/Losses over the entire period.
 
 var netTotalAmount = 0;
 for (let i=0; i < finances.length; i++) {
 netTotalAmount += finances[i][1];
 }
-console.log(netTotalAmount);
+
 
 // Calculate the average of the changes in Profit/Losses over the entire period.
+var changeArray = [];
+
+for (let i=0; i < finances.length -1; i++) {
+// Create an array that totals the difference between months
+changeArray.push(finances[i+1][1] - finances[i][1]);
+}
+
+// Add up the total of the array
+var changeTotal = 0;
+
+for (let i=0; i < changeArray.length; i++) {
+changeTotal += changeArray[i];
+}
+
+
+// FINAL VARIABLE: Divide the output by the number of months to get the total
+
+averageChange = (changeTotal/(TotalMonths - 1)).toFixed(2);
+
+
+
+
+
+
 
 
 
