@@ -108,6 +108,7 @@ for (let i=0; i < finances.length -1; i++) {
 changeArray.push(finances[i+1][1] - finances[i][1]);
 }
 
+    
 // Add up the total of the array
 var changeTotal = 0;
 
@@ -121,18 +122,27 @@ changeTotal += changeArray[i];
 averageChange = (changeTotal/(TotalMonths - 1)).toFixed(2);
 
 
-
-
-
-
-
-
-
-// You will need to track what the total change in profits is from month to month and then find the average.
-
-// Calculate (Total/Number of months)
-
 // Calculate the greatest increase in profits (date and amount) over the entire period.
+
+// Finding the biggest value in the change array
+var maxChange = changeArray[0];
+var maxChangeDate = 0;
+
+for (let i=0; i < changeArray.length -1; i++) {
+if(changeArray[i]>maxChange) {
+    maxChange = changeArray[i];
+    maxChangeDate = i;
+    dateOfMaxChange = finances[i+1];
+    
+}
+
+    }
+   
+// FINAL VARIABLE: The greatest increase in profits (date and amount) over the entire period. 
+
+var maxIncreaseInProfits = dateOfMaxChange[0] + " " + "($" + maxChange + ")";
+console.log(maxIncreaseInProfits);
+
 
 // Calculate the greatest decrease in losses (date and amount) over the entire period.
 
