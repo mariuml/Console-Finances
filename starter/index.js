@@ -166,7 +166,7 @@ if(changeArray[i] < minChange) {
     // Printing out final results
 
     console.log(
-        'Fiancial Analysis \n' +
+        'Financial Analysis \n' +
         '---------------------- \n' +
         'Total Months: ' + TotalMonths + '\n' +
         'Total: ' + '$'+ netTotalAmount +'\n' +
