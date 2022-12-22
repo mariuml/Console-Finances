@@ -1,9 +1,6 @@
 # Console-Finances
 Using Javascript to analyse an array of finances data. 
 
-
-![Screenshot of final financial analysis in the console of the webpage](images/website-screenshot.jpg)
-
 ## Description
 
 For this project, I learnt how to apply Javascript logic to solve a 'real world' problem of analysing an array of finances. I used pseudocoding by hand and in comments to help me breakdown the problem into its constituent code. This was a really useful technique of breaking down large problems into more manageable parts.
