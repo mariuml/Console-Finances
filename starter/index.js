@@ -141,8 +141,37 @@ if(changeArray[i]>maxChange) {
 // FINAL VARIABLE: The greatest increase in profits (date and amount) over the entire period. 
 
 var maxIncreaseInProfits = dateOfMaxChange[0] + " " + "($" + maxChange + ")";
-console.log(maxIncreaseInProfits);
+
 
 
 // Calculate the greatest decrease in losses (date and amount) over the entire period.
 
+var minChange = changeArray[0];
+var minChangeDate = 0;
+
+for (let i=0; i < changeArray.length -1; i++) {
+if(changeArray[i] < minChange) {
+    minChange = changeArray[i];
+    minChangeDate = i;
+    dateOfMinChange = finances[i+1];
+    
+}
+
+    }
+
+    // FINAL VARIABLE: Greatest decrease in losses (date and amount) over the entire period.
+    var minIncreaseInProfits = dateOfMinChange[0] + " " + "($" + minChange + ")";
+   
+
+    // Printing out final results
+
+    console.log(
+        'Fiancial Analysis \n' +
+        '---------------------- \n' +
+        'Total Months: ' + TotalMonths + '\n' +
+        'Total: ' + '$'+ netTotalAmount +'\n' +
+        'Average Change ' + averageChange + '\n' +
+        'Greatest increase in Profits: ' + maxIncreaseInProfits + '\n' +
+'Greatest decrease in Profits: ' + minIncreaseInProfits 
+
+    )
