@@ -10,7 +10,7 @@ I applied my knowledge of indexing arrays, creating variables, writing for loops
 
 ## Usage
 
-The index.html file has been deployed at: https://mariuml.github.io/bootstrap-portfolio/
+The index.html file has been deployed at: https://mariuml.github.io/Console-Finances/
 
 To access the results, navigate to the developer tools and open up the console. The final analysis will be printed there. 
 
